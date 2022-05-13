@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="Run whole class priority">
+        <classes>
+            <class name="class01.Priority"></class>
+        </classes>
+    </test>
+
+    <test name="bthird test in class basic annotations">
+        <classes>
+            <class name="class01.BasicAnnotations">
+                <methods>
+                    <include name="thirdTest"/>
+                </methods>
+            </class>
+        </classes>
+          </test>
+    <test name="run whole package">
+        <packages>
+            <package name="class02"></package>
+        </packages>
+    </test>
+</suite>

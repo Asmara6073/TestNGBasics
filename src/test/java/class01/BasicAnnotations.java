@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class BasicAnnotations {
 
     //runs in alphabetical order
-    @Test
+    @Test(groups="smoke")
     public void firstTest(){
         System.out.println("This is my first test case");
     }
